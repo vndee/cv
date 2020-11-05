@@ -1,0 +1,105 @@
+
+\documentclass[11pt,a4paper]{altacv}
+
+\geometry{left=1cm,right=9cm,marginparwidth=6.8cm,marginparsep=1.2cm,top=1cm,bottom=1cm}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[default]{lato}
+\usepackage{graphicx}
+\usepackage{hyperref}
+
+\definecolor{arsenic}{rgb}{0.23, 0.27, 0.29}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{heading}{arsenic}
+\colorlet{accent}{arsenic}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+\newcommand{\cvproject}[1]{%
+	{\textbf{\color{accent}#1}\par}
+}
+%% sample.bib contains your publications
+\addbibresource{sample.bib}
+
+\begin{document}
+\name{Duy Huynh}
+\tagline{Machine Learning Engineer}
+%\photo{2.5cm}{F1}
+\personalinfo{%
+  % Not all of these are required!
+  % You can add your own with \printinfo{symbol}{detail}
+  \email{\href{mailto:vndee.huynh@gmail.com}{vndee.huynh@gmail.com}}
+  \linkedin{\href{https://linkedin.com/in/vndee}{vndee}}
+  \github{\href{https://github.com/vndee}{vndee}} % I'm just making this up though.
+  \phone{+84918451096}
+  \location{Ho Chi Minh City, Vietnam}
+}
+
+%% Make the header extend all the way to the right, if you want.
+\begin{fullwidth}
+\makecvheader
+\end{fullwidth}
+
+\cvsection[page1sidebar]{Experience}
+\cvevent{\textbf{AI Engineer}}{Dai Phat Solutions Co., Ltd}{Nov 2018 -- Present}{Ho Chi Minh City, Vietnam}
+\begin{itemize}
+	\item Research, build and deploy AI solutions. 
+	\item PyTorch, Flask, Django, FastAPI, Go Fiber, Jenkins, Git, Linux, Apache Kafka.
+\end{itemize}
+\smallskip
+\smallskip
+\cvevent{\textbf{Research Internship}}{AI Laboratory, Ton Duc Thang University}{Jun 2018 -- Nov 2018}{Ho Chi Minh City, Vietnam}
+\begin{itemize}
+	\item Doing research on topics about Natural Language Processing, as well as having hand-on experiences in CV, DGN and GNN. 
+	\item PyTorch, Pandas, Numpy, Matplotlib.
+\end{itemize}
+
+\cvsection{Projects}
+\cvproject{Sentivi - Tool for Sentiment Analysis} {Project Owner - \href{https://github.com/vndee/sentivi}{https://github.com/vndee/sentivi}}
+\begin{itemize}
+	\item A simple tool for sentiment analysis which is a wrapper of scikit-learn and PyTorch Transformers models. It is made for easy and faster pipeline to train and evaluate several classification algorithms. 
+	\item PyTorch, Scikit-learn, Transformers, Numpy. 
+\end{itemize}
+
+\cvproject{Deepis - Deep Image Search} {Project Manager \& Developer}
+\begin{itemize}
+	\item End-to-end visual search service that empowers by state-of-the-art Deep Learning algorithm. It is designed for scale and stability. 
+	\item PyTorch, Go Fiber, FastAPI, Apache Kafka,  Django, Selenium, Docker, Jenkins, HTML/CSS, Milvus, Elasticsearch, Kibana.
+\end{itemize} 
+
+\cvproject{Deepa - MOOCs platform} {Project Manager}
+\begin{itemize}
+	\item MOOCs (Massive Open Online Courses) platform that enhances high-level education based on OpenEdx open-source with containerizing deployment. 
+	\item Docker, Django, HTML/CSS, Jenkins CI.
+\end{itemize} 
+
+\cvsection{Competitive Programming}
+\cvproject{Codeforces Candidates Master} {}
+\smallskip
+\begin{itemize}
+	\item Rating 2065 (top 4\%). \href{https://codeforces.com/profile/hdi}{https://codeforces.com/profile/hdi}.
+\end{itemize}
+\smallskip
+\cvproject{Hackerrank Algorithm Specialist} {}
+\begin{itemize}
+	\item Top algorithm specialist of Hakerrank (rating 2268.76, rank 1678, top 1\%). \href{https://www.hackerrank.com/watagogo}{https://www.hackerrank.com/watagogo}.
+\end{itemize} 
+
+
+\clearpage
+
+
+
+%% If the NEXT page doesn't start with a \cvsection but you'd
+%% still like to add a sidebar, then use this command on THIS
+%% page to add it. The optional argument lets you pull up the 
+%% sidebar a bit so that it looks aligned with the top of the
+%% main column.
+% \addnextpagesidebar[-1ex]{page3sidebar}
+
+
+\end{document}
